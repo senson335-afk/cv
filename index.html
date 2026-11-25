@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حسن البرناوي | مطور برمجيات ومصمم مواقع ويب</title>
+  <!-- خط Tajawal من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <!-- ربط ملف التنسيقات -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-content">
+      <a href="#hero" class="logo">حسن<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">نبذة عني</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#education">التعليم</a>
+        <a href="#contact">التواصل</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeToggle" class="icon-btn" aria-label="تبديل المظهر" title="تبديل الوضع الليلي/النهاري">
+          <svg id="sunIcon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button id="menuToggle" class="icon-btn mobile-only" aria-label="القائمة">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. الاسم والعنوان المهني -->
+    <section id="hero" class="hero section">
+      <div class="hero-glow"></div>
+      <div class="container hero-container reveal">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          متاح للمشاريع والأعمال الحرة
+        </div>
+        <h1 class="hero-name">حسن البرناوي</h1>
+        <h2 class="hero-title">
+          مطور برمجيات ومصمم مواقع ويب
+          <span class="divider">|</span>
+          <span class="gradient-text">أحوّل أفكارك إلى مواقع احترافية سريعة ومتجاوبة</span>
+        </h2>
+        <div class="hero-cta">
+          <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%20%D9%88%D9%8A%D8%A8." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+            تواصل عبر واتساب
+          </a>
+          <a href="#projects" class="btn btn-secondary">استكشف أعمالي</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. جملة التعريف -->
+    <section id="about" class="about section">
+      <div class="container reveal">
+        <div class="about-card">
+          <div class="section-tag">نبذة تعريفية</div>
+          <p class="about-text">
+            أساعد الأفراد والشركات على إطلاق مواقع احترافية وسريعة ومتجاوبة، بخبرة في تطوير البرمجيات وتصميم مواقع الويب.
+          </p>
+          <div class="highlights-grid">
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <div>
+                <h3>أداء فائق السرعة</h3>
+                <p>تحسين شامل لسرعة التحميل وتجربة المستخدم</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📱</span>
+              <div>
+                <h3>تصميم متجاوب 100%</h3>
+                <p>توافق تام مع الجوال، الأجهزة اللوحية، وسطح المكتب</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🎨</span>
+              <div>
+                <h3>أنظمة تصميم متكاملة</h3>
+                <p>واجهات نظيفة وعصرية تبني الثقة بهويتك الرقمية</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. المهارات -->
+    <section id="skills" class="skills section">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">القدرات والخبرات</span>
+          <h2 class="section-title">المهارات التقنية والشخصية</h2>
+        </div>
+
+        <div class="skills-wrapper">
+          <!-- المهارات التقنية -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon tech-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>المهارات التقنية والأدوات</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-pill tech">HTML5 / CSS3</span>
+              <span class="skill-pill tech">JavaScript</span>
+              <span class="skill-pill tech">تحسين الأداء وسرعة التحميل</span>
+              <span class="skill-pill tech">التصميم المتجاوب للجوال</span>
+              <span class="skill-pill tech">أنظمة التصميم Design Systems</span>
+              <span class="skill-pill tech">Git &amp; GitHub</span>
+              <span class="skill-pill tech">VS Code</span>
+              <span class="skill-pill tech">Google Analytics (أساسيات)</span>
+            </div>
+          </div>
+
+          <!-- المهارات الشخصية -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon soft-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <h3>المهارات الشخصية</h3>
+            </div>
+            <div class="skills-tags">
+              <span class="skill-pill soft">حل المشكلات</span>
+              <span class="skill-pill soft">التفكير المنطقي</span>
+              <span class="skill-pill soft">إدارة الوقت</span>
+              <span class="skill-pill soft">العمل ضمن فريق</span>
+              <span class="skill-pill soft">التواصل الفعال</span>
+              <span class="skill-pill soft">الانتباه للتفاصيل</span>
+              <span class="skill-pill soft">التعلم المستمر</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. المشاريع -->
+    <section id="projects" class="projects section">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">نماذج الأعمال</span>
+          <h2 class="section-title">أبرز المشاريع</h2>
+          <p class="section-subtitle">نماذج تطبيقية تعكس جودة الكود، سرعة الأداء، وتجربة المستخدم المتجاوبة</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- مشروع 1 -->
+          <article class="project-card">
+            <div class="project-banner banner-1">
+              <span class="project-badge">منصة شركات</span>
+            </div>
+            <div class="project-body">
+              <h3>موقع تعريفي لشركة تقنية ناشئة</h3>
+              <p>تصميم وتطوير واجهة أمامية متكاملة سريعة التحميل مع نظام تصميم موحد وتوافق كامل مع محركات البحث والشاشات الذكية.</p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Design System</span>
+              </div>
+              <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D9%86%D9%81%D9%8A%D8%B0%20%D9%85%D9%88%D9%82%D8%B9%20%D8%AA%D8%B9%D8%B1%D9%8A%D9%81%D9%8A%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87." target="_blank" rel="noopener noreferrer" class="project-link">
+                اطلب مشروعاً مشابهاً &larr;
+              </a>
+            </div>
+          </article>
+
+          <!-- مشروع 2 -->
+          <article class="project-card">
+            <div class="project-banner banner-2">
+              <span class="project-badge">صفحة هبوط</span>
+            </div>
+            <div class="project-body">
+              <h3>صفحة هبوط عالية التحويل (Landing Page)</h3>
+              <p>صفحة تسويقية تفاعلية مصممة بعناية لتعزيز معدل التحويل مع تحسين الأداء وربط أدوات تتبع الزيارات Google Analytics.</p>
+              <div class="project-tech">
+                <span>Responsive UI</span>
+                <span>Performance</span>
+                <span>Google Analytics</span>
+              </div>
+              <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D8%A7%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9." target="_blank" rel="noopener noreferrer" class="project-link">
+                اطلب مشروعاً مشابهاً &larr;
+              </a>
+            </div>
+          </article>
+
+          <!-- مشروع 3 -->
+          <article class="project-card">
+            <div class="project-banner banner-3">
+              <span class="project-badge">نظام تصميم</span>
+            </div>
+            <div class="project-body">
+              <h3>مكتبة مكونات واجهة مستخدم عربية (RTL UI Kit)</h3>
+              <p>بناء نظام تصميم متكامل يدعم اللغة العربية واتجاه RTL بشكل أصيل لتسريع تطوير التطبيقات والمواقع وضمان تناسق الهوية.</p>
+              <div class="project-tech">
+                <span>Design Systems</span>
+                <span>CSS Grid / Flex</span>
+                <span>Git &amp; GitHub</span>
+              </div>
+              <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%88%D8%A7%D8%AC%D9%87%D8%A9%20%D9%85%D9%88%D9%82%D8%B9." target="_blank" rel="noopener noreferrer" class="project-link">
+                اطلب مشروعاً مشابهاً &larr;
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. التعليم -->
+    <section id="education" class="education section">
+      <div class="container reveal">
+        <div class="section-header">
+          <span class="section-tag">المؤهل الأكاديمي</span>
+          <h2 class="section-title">التعليم</h2>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div class="edu-details">
+            <span class="edu-badge">درجة البكالوريوس</span>
+            <h3>بكالوريوس — جامعة منيسوتا</h3>
+            <p class="edu-en">University of Minnesota</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. التواصل مع زر واتساب بارز -->
+    <section id="contact" class="contact section">
+      <div class="container reveal">
+        <div class="contact-box">
+          <div class="contact-glow"></div>
+          <span class="section-tag">ابدأ مشروعك اليوم</span>
+          <h2>هل لديك فكرة موقع وتريد تحويلها إلى واقع؟</h2>
+          <p>تواصل معي مباشرة عبر واتساب لمناقشة تفاصيل مشروعك والحصول على استشارة مجانية وعرض سعر مناسب.</p>
+
+          <div class="contact-actions">
+            <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%88%D8%AA%D8%B7%D9%88%D9%8A%D8%B1%20%D9%85%D9%88%D9%82%D8%B9%20%D9%88%D9%8A%D8%A8." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+              تواصل معي الآن عبر واتساب
+            </a>
+
+            <button type="button" id="copyPhoneBtn" class="phone-copy-box" title="انقر لنسخ الرقم">
+              <span dir="ltr" class="phone-number">+966 59 870 4317</span>
+              <span class="copy-label" id="copyLabel">نسخ الرقم</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> حسن البرناوي. جميع الحقوق محفوظة.</p>
+      <a href="#hero" class="back-to-top">العودة للأعلى &uarr;</a>
+    </div>
+  </footer>
+
+  <!-- زر واتساب عائم بارز -->
+  <a href="https://wa.me/966598704317?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%AD%D8%B3%D9%86%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="تواصل عبر واتساب" title="تواصل عبر واتساب">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.418A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+  </a>
+
+  <!-- ربط ملف الجافاسكربت -->
+  <script src="script.js"></script>
+</body>
+</html>
